@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Store | Saúde e Longevidade</title>
+    <!-- Carrega Tailwind CSS via CDN para código limpo e moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de cores e fontes customizadas do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2ecc71',      /* Verde Menta - Energia */
+                        'action': '#e67e22',       /* Laranja Vibrante - Botões CTA */
+                        'background': '#f9f9f9',   /* Fundo Limpo */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+</head>
+<body class="bg-background font-sans text-gray-800">
+
+    <!-- Header & Navegação Simples -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">Vitality</div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#beneficios" class="text-gray-600 hover:text-action transition duration-200">Benefícios</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-action transition duration-200">Depoimentos</a>
+                <a href="#oferta" class="text-action font-semibold hover:underline">Oferta do dia</a>
+            </div>
+            <button class="bg-action text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-200 flex items-center">
+                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="www.w3.org"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                Carrinho
+            </button>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto mt-8 p-4">
+
+        <!-- Seção Principal do Produto (Hero/Oferta) -->
+        <section id="oferta" class="bg-white shadow-xl rounded-xl p-6 md:p-10 flex flex-col md:flex-row gap-8">
+            
+            <!-- Imagem do Produto (Placeholder) -->
+            <div class="md:w-1/2">
+                <img src="via.placeholder.com" alt="Produto de Saúde e Bem Estar" class="rounded-lg shadow-lg w-full object-cover">
+                <p class="text-center mt-3 text-sm text-gray-500">Mais de 15.000 clientes satisfeitos!</p>
+            </div>
+
+            <!-- Detalhes e Compra -->
+            <div class="md:w-1/2">
+                <h1 class="text-4xl font-black mb-4 text-gray-900">Suplemento Ultra Longevidade PRO</h1>
+                
+                <div class="flex items-center mb-4">
+                    <span class="text-yellow-400 text-2xl">★★★★★</span>
+                    <span class="ml-2 text-gray-600">(450 Avaliações)</span>
+                </div>
+
+                <p class="text-gray-600 mb-6">
+                    A fórmula secreta para rejuvenescer suas células e viver com mais energia e disposição. Resultados visíveis em apenas 30 dias!
+                </p>
+
+                <div class="mb-6">
+                    <p class="text-sm line-through text-gray-400">De: R$ 299,90</p>
+                    <p class="text-5xl font-bold text-action">Por: R$ 149,90</p>
+                    <p class="text-sm text-primary font-semibold mt-1">Oferta válida somente hoje!</p>
+                </div>
+                
+                <!-- Botão de Ação CTA (Chamativo) -->
+                <button class="w-full bg-action hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl text-xl transform hover:scale-105 transition duration-300 shadow-lg">
+                    GARANTIR MINHA SAÚDE AGORA
+                </button>
+
+                <!-- Selos de Confiança -->
+                <div class="mt-6 flex justify-around items-center text-gray-500 text-sm">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Frete Grátis
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 4.343a1 1 0 00-1.414-1.414l-1.414 1.414a1 1 0 101.414 1.414l1.414-1.414zM20 10h-1a1 1 0 100 2h1a1 1 0 100-2zM15.657 15.657a1 1 0 10-1.414 1.414l1.414 1.414a1 1 0 001.414-1.414l-1.414-1.414zM10 19v-1a1 1 0 10-2 0v1a1 1 0 102 0zM4.343 15.657a1 1 0 001.414 1.414l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414zM4 10H3a1 1 0 000 2h1a1 1 0 000-2zM6.757 4.343a1 1 0 00-1.414-1.414L3.929 4.95a1 1 0 001.414 1.414l1.414-1.414z"></path><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                        Garantia 30 Dias
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios (Grid Simples) -->
+        <section id="beneficios" class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Transforme Sua Saúde Hoje</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto text-primary mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 10-6 0v2a2 2 0 002 2h1a2 2 0 002-2V6zM14 14a3 3 0 10-6 0v2a2 2 0 002 2h1a2 2 0 002-2v-2zM4.774 18.895a1 1 0 01.252-.74c.58-.58 1.267-.995 2-1.153V14a3 3 0 116 0v3c.733.158 1.42.573 2 1.154a1 1 0 01.252.741l.006.012a1 1 0 01-.252.74c-.58.58-1.267.995-2 1.153v1a1 1 0 11-2 0v-1h-1v1a1 1 0 11-2 0v-1h-1v1a1 1 0 11-2 0v-1c-.733-.158-1.42-.573-2-1.154a1 1 0 01-.252-.74l-.006-.012z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">Mais Energia</h3>
+                    <p class="text-gray-600">Sinta-se 10 anos mais jovem com nossa fórmula exclusiva e patenteada.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto text-primary mb-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">Imunidade Forte</h3>
+                    <p class="text-gray-600">Reforce seu sistema imunológico contra doenças sazonais e virais.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto text-primary mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 01-16 0zM12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">Sono Reparador</h3>
+                    <p class="text-gray-600">Durma melhor e acorde revigorado, pronto para o seu dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Quem Usou, Aprovou!</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <p class="italic text-lg text-gray-600 mb-4">"Este produto mudou minha vida! Tinha dores crônicas e vivia cansado. Agora, me sinto uma nova pessoa. Recomendo a todos que buscam longevidade real."</p>
+                <div class="flex items-center">
+                    <img src="via.placeholder.com" alt="Cliente Feliz" class="rounded-full mr-4">
+                    <div>
+                        <p class="font-semibold">João Silva, 45 anos</p>
+                        <p class="text-yellow-400">★★★★★</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Simples -->
+        <section class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-8">Dúvidas Frequentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="font-semibold text-lg mb-1">O produto é natural?</p>
+                    <p class="text-gray-600">Sim, nossa fórmula é 100% natural, sem conservantes ou químicos agressivos.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="font-semibold text-lg mb-1">Qual o prazo de entrega?</p>
+                    <p class="text-gray-600">Para o Brasil, o prazo médio é de 10 a 20 dias úteis, com frete grátis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="mt-20 text-center bg-primary p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-white mb-4">Não espere mais para viver mais e melhor!</h2>
+            <button class="bg-action hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-lg text-xl transform hover:scale-105 transition duration-300">
+                COMPRAR AGORA COM DESCONTO
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer Simples e Limpo -->
+    <footer class="mt-12 bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Vitality Store. Todos os direitos reservados.</p>
+            <div class="mt-4 space-x-6 text-sm">
+                <a href="#" class="hover:text-action">Políticas de Privacidade</a>
+                <a href="#" class="hover:text-action">Termos de Uso</a>
+                <a href="#" class="hover:text-action">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript (Básico, sem bibliotecas pesadas) -->
+    <script>
+        // Função para rolagem suave ao clicar nos links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
